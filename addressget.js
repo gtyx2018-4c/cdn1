@@ -1,5 +1,5 @@
-function getRequest(address){
-    var url= address;
+function getRequest(){
+    var url= location.search;
     var ret = new Object();
     if(url.indexOf("?")!=-1){
         var str = url.substr(1);
