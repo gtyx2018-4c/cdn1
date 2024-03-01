@@ -11,3 +11,12 @@ function getRequest(){
     }
 return ret;
 }
+function getRequestNew(){
+    var url = location.href;
+    var Request = new Object;
+    var Request_x;
+    Request_x=url.indexOf("?");
+    Request = url.split("&");
+    var ret = Request;
+    return ret;
+}
