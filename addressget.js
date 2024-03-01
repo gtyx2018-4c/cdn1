@@ -16,7 +16,9 @@ function getRequestNew(){
     var Request = new Object;
     var Request_x;
     Request_x=url.indexOf("?");
-    Request = url.split("&");
+    
+    Request = url.split("?");
+    Request = Request[2].split("&")
     var ret = Request;
     return ret;
 }
