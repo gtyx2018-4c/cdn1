@@ -13,12 +13,12 @@ return ret;
 }
 function getRequestNew(){
     var url = location.href;
-    var Request = new Object;
+    var Request = "";
     var Request_x;
-    Request_x=url.indexOf("?");
+    var Request_x=url.indexOf("?");
     
-    Request = url.split("?");
-    Request = Request[2].split("&")
+    var Request = url.split("?");
+    var Request = Request[2].split("&")
     var ret = Request;
     return ret;
 }
